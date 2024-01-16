@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Style for calculator buttons -->
+    <style name="CalculatorButton">
+        <item name="android:layout_width">wrap_content</item> <!-- width set to 0dp for layout_weight -->
+        <item name="android:layout_height">wrap_content</item> <!-- height set to 0dp for layout_weight -->
+        <item name="android:layout_margin">1dp</item> <!-- margin of 1dp around buttons -->
+        <item name="android:layout_weight">1</item> <!-- weight set to 1 for equal distribution -->
+        <item name="android:textSize">22sp</item> <!-- text size of 22sp for the button text -->
+        <item name="android:padding">12dp</item> <!-- padding inside the button -->
+        <item name="android:gravity">center</item> <!-- center the text inside the button -->
+    </style>
+
+    <!-- Define other styles if necessary -->
+
+</resources>

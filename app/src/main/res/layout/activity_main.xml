@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:textSize="36sp"
+        android:textColor="@android:color/white"
+        android:gravity="end|center_vertical"
+        android:padding="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="0"
+        android:maxLength="10"
+        android:ellipsize="end"
+        android:lines="1" />
+
+
+    <!-- Define the style for the buttons -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDisplay"
+        android:layout_marginTop="1dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:columnOrderPreserved="false"
+        android:padding="16dp"
+        android:rowCount="5">
+
+        <!-- Row 1 for numbers 7, 8, 9, and Division -->
+
+        <Button
+            android:id="@+id/btnEight"
+            style="@style/CalculatorButton"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="8" />
+
+         <Button
+            android:id="@+id/btnNine"
+            style="@style/CalculatorButton"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btnDivide"
+            style="@style/CalculatorButton"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:text="/" />
+
+        <!-- Row 2 for numbers 4, 5, 6, and Multiplication -->
+        <Button
+            android:id="@+id/btnFour"
+            style="@style/CalculatorButton"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btnFive"
+            style="@style/CalculatorButton"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btnSix"
+            style="@style/CalculatorButton"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            style="@style/CalculatorButton"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:text="*" />
+
+        <!-- Row 3 for numbers 1, 2, 3, and Subtraction -->
+        <Button
+            android:id="@+id/btnOne"
+            style="@style/CalculatorButton"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btnTwo"
+            style="@style/CalculatorButton"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btnThree"
+            style="@style/CalculatorButton"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btnSubtract"
+            style="@style/CalculatorButton"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:text="-" />
+
+        <!-- Row 4 for the decimal point, number 0, and Addition -->
+        <Button
+            android:id="@+id/btnDecimal"
+            style="@style/CalculatorButton"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:text="." />
+
+        <Button
+            android:id="@+id/btnZero"
+            style="@style/CalculatorButton"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/CalculatorButton"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/CalculatorButton"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:text="+" />
+
+        <!-- Row 5 for the Equals button -->
+        <Button
+            android:id="@+id/btnEquals"
+            style="@style/CalculatorButton"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_columnSpan="4"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/btnSeven"
+            style="@style/CalculatorButton"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="7" />
+    </GridLayout>
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+    </RadioGroup>
+
+
+</RelativeLayout>
